@@ -83,8 +83,8 @@ def main():
     parser = argparse.ArgumentParser(description="Compare frequent itemsets in two files.")
 
     # Add expected command-line arguments
-    parser.add_argument('-r', '--reference', type=str, required=True, help="Path to the reference file, provided by TAs")
-    parser.add_argument('-s', '--submission', type=str, required=True, help="Path to the submission file, provided by students")
+    parser.add_argument('-r', '--reference', type=str, required=True, help="Path to the reference itemset file (expected results)")
+    parser.add_argument('-s', '--submission', type=str, required=True, help="Path to the itemset file to verify")
 
     # Parse command-line arguments
     args = parser.parse_args()
